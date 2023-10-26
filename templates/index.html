@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1>{{name}}</h1>
+    <h2>Cloud Solutions Architect and Dev/OPs</h2>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/contact">Kontakt</a></li>
+        <ul>
+    <nav>
+<header>
+<main>
+    <section>
+        <h3>Etwas über mich</h3>
+        <p>Vom Lokführer in die Cloud..!</p>
+    <section>
+        <h3>Skills</h3>
+        <p>Mit diesen Tools und Sprachen arbeite ich jeden Tag</p>
+        <ul>
+            {%for skill in skills%}
+            <li>{{skill}}</li>
+            {% endfor %}
+        </ul>
+    <section>
+        <h3>Kontakt</h3>
+        <P>Bei Interesse oder Fragen erreicht Ihr mich über das <a href="/contact">Kontaktformular</a></P>
+    </section>
+</main>
+<footer>
+    <h3>Credits</h3>
+    <p>Thanks and Greets an <a href="http://techstarter.de" target="_blank">Techstarter.de</a></p>
+</footer>
+</body>
+</html>
